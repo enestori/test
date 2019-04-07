@@ -1,6 +1,6 @@
 node {
   stage ('Checkout') {
-    svn 'https://svn.mycorp/trunk/'
+    git 'https://github.com/enestori/test/'
     stage 'Build'
     sh 'make all'
     stage 'Test'
